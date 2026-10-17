@@ -13,7 +13,7 @@
     <div class="container">
       <p class="eyebrow">AIE1101 · VIBE CODING LAB</p>
       <h1>Virtual Dog Park <span aria-hidden="true">🐾</span></h1>
-      <p>Meet three wonderful breeds and care for your new best friend.</p>
+      <p>Meet three wonderful breeds, adopt your new best friend, and help them grow.</p>
     </div>
   </header>
 
@@ -42,11 +42,11 @@
       </div>
 
       <div id="pet-panel" class="panel pet-panel" hidden>
-        <div class="pet-portrait"><img id="pet-image" src="assets/beagle.svg" alt="Illustration of your adopted Beagle" width="180" height="180"></div>
-        <div class="pet-details"><span class="pet-label">YOUR PARK COMPANION</span><h3 id="pet-name"></h3><div class="stats"><p><span>Breed</span><strong id="pet-breed"></strong></p><p><span>Day</span><strong id="pet-day"></strong></p><p><span>Growth stage</span><strong id="pet-stage"></strong></p><p><span>Happiness</span><strong id="pet-happiness"></strong></p></div><div class="happiness-track" role="progressbar" aria-label="Dog happiness" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" id="happiness-track"><div id="happiness-fill" class="happiness-fill"></div></div><div class="actions"><button id="feed-button" class="button primary" type="button">🍖 Feed</button><button id="play-button" class="button primary" type="button">🎾 Play</button></div><p id="pet-message" class="feedback" aria-live="polite"></p></div>
+        <div class="pet-portrait"><img id="pet-image" src="assets/beagle.svg" alt="Illustration of your adopted Beagle" width="180" height="180"><div class="growth-track" aria-label="Growth progress"><div id="growth-fill" class="growth-fill"></div></div><p id="growth-caption">Growing up</p></div>
+        <div class="pet-details"><span class="pet-label">YOUR PARK COMPANION</span><h3 id="pet-name"></h3><div class="stats"><p><span>Breed</span><strong id="pet-breed"></strong></p><p><span>Day</span><strong id="pet-day"></strong></p><p><span>Growth stage</span><strong id="pet-stage"></strong></p><p><span>Happiness</span><strong id="pet-happiness"></strong></p></div><div class="happiness-track" role="progressbar" aria-label="Dog happiness" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" id="happiness-track"><div id="happiness-fill" class="happiness-fill"></div></div><div class="actions"><button id="feed-button" class="button primary" type="button">🍖 Feed</button><button id="play-button" class="button primary" type="button">🎾 Play</button><button id="next-day-button" class="button secondary" type="button">☀️ Next Day</button><button id="start-over-button" class="button muted" type="button">Start Over</button></div><p id="pet-message" class="feedback" aria-live="polite"></p></div>
       </div>
     </section>
   </main>
-  <footer class="container"><p>Made for AIE1101 · Adoption and care.</p></footer>
+  <footer class="container"><p>Made for AIE1101 · Progress is saved in this browser only.</p></footer>
 </body>
 </html>
