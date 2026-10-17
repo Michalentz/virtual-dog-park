@@ -13,7 +13,7 @@
     <div class="container">
       <p class="eyebrow">AIE1101 · VIBE CODING LAB</p>
       <h1>Virtual Dog Park <span aria-hidden="true">🐾</span></h1>
-      <p>Explore three wonderful dog breeds and learn how to care for them.</p>
+      <p>Meet three wonderful breeds and care for your new best friend.</p>
     </div>
   </header>
 
@@ -27,7 +27,26 @@
       </div>
     </section>
 
+    <section class="pet-section" aria-labelledby="pet-title">
+      <div class="section-heading"><span class="section-number">02 / ADOPT & CARE</span><h2 id="pet-title">My Virtual Dog</h2><p>Give your friend a name and make every day count.</p></div>
+      <div id="adoption-panel" class="panel adoption-panel">
+        <form id="adoption-form" novalidate>
+          <label for="breed-select">Choose a breed</label>
+          <select id="breed-select" name="breed" required><option value="Beagle">Beagle</option><option value="Golden Retriever">Golden Retriever</option><option value="Poodle">Poodle</option></select>
+          <label for="dog-name">Dog name <span class="hint">(1–20 characters)</span></label>
+          <input id="dog-name" name="dogName" type="text" maxlength="20" autocomplete="off" placeholder="e.g. Buddy" aria-describedby="name-error" required>
+          <p id="name-error" class="error" role="alert" aria-live="polite"></p>
+          <button class="button primary" type="submit">Adopt my dog <span aria-hidden="true">♥</span></button>
+        </form>
+        <div class="adoption-art" aria-hidden="true"><span>🐶</span><strong>A new friendship starts here.</strong><p>Choose your favorite breed and begin your adventure.</p></div>
+      </div>
+
+      <div id="pet-panel" class="panel pet-panel" hidden>
+        <div class="pet-portrait"><img id="pet-image" src="assets/beagle.svg" alt="Illustration of your adopted Beagle" width="180" height="180"></div>
+        <div class="pet-details"><span class="pet-label">YOUR PARK COMPANION</span><h3 id="pet-name"></h3><div class="stats"><p><span>Breed</span><strong id="pet-breed"></strong></p><p><span>Day</span><strong id="pet-day"></strong></p><p><span>Growth stage</span><strong id="pet-stage"></strong></p><p><span>Happiness</span><strong id="pet-happiness"></strong></p></div><div class="happiness-track" role="progressbar" aria-label="Dog happiness" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" id="happiness-track"><div id="happiness-fill" class="happiness-fill"></div></div><div class="actions"><button id="feed-button" class="button primary" type="button">🍖 Feed</button><button id="play-button" class="button primary" type="button">🎾 Play</button></div><p id="pet-message" class="feedback" aria-live="polite"></p></div>
+      </div>
+    </section>
   </main>
-  <footer class="container"><p>Made for AIE1101 · Dog encyclopedia.</p></footer>
+  <footer class="container"><p>Made for AIE1101 · Adoption and care.</p></footer>
 </body>
 </html>
